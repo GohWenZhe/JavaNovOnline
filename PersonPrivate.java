@@ -15,6 +15,7 @@ public class PersonPrivate
     
     public void displayDetails()
     {
+        double bmi = height / (weight+age);
         System.out.println("Name: " + name);
         System.out.println("Age: " + age + " years");
         System.out.println("Height: " + height + " cm");
