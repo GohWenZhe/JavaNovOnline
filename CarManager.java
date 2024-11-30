@@ -28,7 +28,6 @@ public class CarManager {
         Scanner scanner = new Scanner(System.in);
         CarManager manager = new CarManager();
 
-        // Get details for the first car
         System.out.println("Enter details for Car 1:");
         System.out.print("Model: ");
         String model1 = scanner.nextLine();
@@ -36,9 +35,8 @@ public class CarManager {
         String make1 = scanner.nextLine();
         System.out.print("Price: ");
         double price1 = scanner.nextDouble();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
-        // Get details for the second car
         System.out.println("Enter details for Car 2:");
         System.out.print("Model: ");
         String model2 = scanner.nextLine();
@@ -46,9 +44,8 @@ public class CarManager {
         String make2 = scanner.nextLine();
         System.out.print("Price: ");
         double price2 = scanner.nextDouble();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
-        // Get details for the third car
         System.out.println("Enter details for Car 3:");
         System.out.print("Model: ");
         String model3 = scanner.nextLine();
@@ -57,12 +54,10 @@ public class CarManager {
         System.out.print("Price: ");
         double price3 = scanner.nextDouble();
 
-        // Create Car objects
         Car car1 = manager.new Car(model1, make1, price1);
         Car car2 = manager.new Car(model2, make2, price2);
         Car car3 = manager.new Car(model3, make3, price3);
 
-        // Display car details
         System.out.println("\nCar 1 Details:");
         car1.displayDetails();
         System.out.println("\nCar 2 Details:");
@@ -70,10 +65,7 @@ public class CarManager {
         System.out.println("\nCar 3 Details:");
         car3.displayDetails();
 
-        // Calculate and display average price
         double averagePrice = (car1.getPrice() + car2.getPrice() + car3.getPrice()) / 3;
         System.out.printf("\nAverage Price of Cars: $%.2f\n", averagePrice);
-
-        scanner.close();
     }
 }
