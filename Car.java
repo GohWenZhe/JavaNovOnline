@@ -14,7 +14,7 @@ public class Car {
         System.out.println("Car Name: " + carName);
         System.out.println("Car Year: " + carYear);
         System.out.println("Car Price: $" + carPrice);
-        System.out.println("Car Value (Year x Price): $" + carValue);
+        System.out.println("Car Value: $" + carValue);
     }
 
     public static void main(String[] args)
