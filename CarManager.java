@@ -28,7 +28,6 @@ public class CarManager {
         Scanner scanner = new Scanner(System.in);
         CarManager manager = new CarManager();
 
-        // Get details for the first car
         System.out.println("Enter details for Car 1:");
         System.out.print("Model: ");
         String model1 = scanner.nextLine();
@@ -68,7 +67,5 @@ public class CarManager {
 
         double averagePrice = (car1.getPrice() + car2.getPrice() + car3.getPrice()) / 3;
         System.out.printf("\nAverage Price of Cars: $%.2f\n", averagePrice);
-
-        scanner.close();
     }
 }

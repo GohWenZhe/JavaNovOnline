@@ -34,11 +34,10 @@ public class Assignment {
             System.out.println("The cars are expensive.");
         } else if (averagePrice >= 50000 && averagePrice <= 99999) {
             System.out.println("The cars are normal price.");
-        } else {
+        } else if (averagePrice < 49999) {
             System.out.println("The cars are cheap.");
         }
     }
-
     private Car getCarDetails(Scanner scanner) {
         System.out.println("Enter car model:");
         String model = scanner.nextLine();

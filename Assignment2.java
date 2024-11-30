@@ -31,8 +31,10 @@ public class Assignment2 {
 
         // Ternary Operation
         String category = (averagePrice > 100000) ? "The cars are expensive."
-                        : (averagePrice >= 50000 && averagePrice <= 99999) ? "The cars are normal price."
-                        : "The cars are cheap.";
+                       : (averagePrice >= 50000 && averagePrice <= 99999) ? "The cars are normal price."
+                       : (averagePrice < 49999) ? "The cars are cheap." 
+                       : "Unknown category."; // In case of an unexpected range
+
         System.out.println(category);
     }
 
