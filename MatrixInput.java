@@ -21,7 +21,7 @@ public class MatrixInput {
                 System.out.println("You selected a 2x3 matrix. Please enter the values:");
                 break;
             default:
-                System.out.println("Invalid choice! Please restart and choose either 1 or 2.");
+                System.out.println("Invalid choice!");
                 return;
         }
 
