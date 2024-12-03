@@ -1,7 +1,7 @@
 public class Switch {
 
     public static void main(String[] args) {
-        int dayOfWeek = -1;
+        int dayOfWeek = 3;
 
         String dayName;
 

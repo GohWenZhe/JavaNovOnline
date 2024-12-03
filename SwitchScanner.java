@@ -1,11 +1,16 @@
+
 import java.util.Scanner;
 
-public class SwitchScanner{
+public class SwitchScanner {
 
     public static void main(String[] args) {
-        Scanner we = new Scanner(System.in);
-        System.out.println("Enter the day of week");
-        int dayOfWeek=we.nextInt();
+        
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter a day of the week (1-7): ");
+        int dayOfWeek = scanner.nextInt();
+        scanner.close();
+        
 
         String dayName;
 
@@ -38,7 +43,6 @@ public class SwitchScanner{
         }
 
         System.out.println("Day of the week: " + dayName);
-
-        we.close();
     }
+    
 }

@@ -1,30 +1,32 @@
-public class PersonPrivate 
-{
+public class PersonPrivate {
+
+    // private fields
+
     private String name;
     private int age;
     private double height;
     private double weight;
 
-    public PersonPrivate (String name, int age, double height,double weight)
-    {
+    {/*
+        These are my new changes
+        to the private fields
+    */}
+    public PersonPrivate(String name, int age, double height, double weight) {
         this.name = name;
         this.age = age;
         this.height = height;
-        this.weight = weight; 
-    }
-    
-    public void displayDetails()
-    {
-
-    System.out.println("Name: " + name);
-        System.out.println("Age: " + age + " years");
-        System.out.println("Height: " + height + " cm");
-        System.out.println("Weight: " + weight + " kg");
+        this.weight = weight;
     }
 
-    public static void main(String[] args) 
-    {
-        PersonPrivate person = new PersonPrivate ("Goh",22,177,64);  
+    public void displayDetails(){
+        double bmi = height / (weight + age);
+
+        System.out.println(name + " bmis is: " + bmi);
+
+    }
+
+    public static void main(String[] args) {
+        PersonPrivate person = new PersonPrivate("Tan", 20, 175.65, 95.4);
         person.displayDetails();
     }
 }
