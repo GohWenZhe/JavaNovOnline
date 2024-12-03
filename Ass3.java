@@ -22,7 +22,7 @@ public class Ass3 {
                 CheapMatrix[i][0] = String.valueOf(price);
                 CheapMatrix[i][1] = "Cheap";                
                 CheapMatrix[i][2] = "old";                  
-                CheapMatrix[i][3] = "for sale";             
+                CheapMatrix[i][3] = "for sale";           
             }
         }
 
