@@ -1,41 +1,34 @@
 import java.util.Scanner;
 
 class Car {
-    public String getPrice() {
-        return "Price not available";
+    void displayPrice() {
+        System.out.println("Price not available for this car.");
     }
 }
-
 
 class Toyota extends Car {
-    @Override
-    public String getPrice() {
-        return "25,000 RM";
+    void displayPrice() {
+        System.out.println("Toyota: 25,000 RM");
     }
 }
-
 
 class BMW extends Car {
-    @Override
-    public String getPrice() {
-        return "85,000 RM";
+    void displayPrice() {
+        System.out.println("BMW: 85,000 RM");
     }
 }
-
 
 class Tesla extends Car {
-    @Override
-    public String getPrice() {
-        return "75,000 RM";
+    void displayPrice() {
+        System.out.println("Tesla: 75,000 RM");
     }
 }
 
-public class CarPriceFinder {
+public class CarPriceChecker {
     public static void main(String[] args) {
-        Scanner we = new Scanner(System.in);
-
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the car name (Toyota, BMW, Tesla): ");
-        String carName = we.nextLine();
+        String carName = scanner.nextLine().trim();
 
         Car car;
 
@@ -54,8 +47,8 @@ public class CarPriceFinder {
                 break;
         }
 
-        System.out.println("The price is: " + car.getPrice());
+        car.displayPrice();
 
-        we.close();
+        scanner.close();
     }
 }
